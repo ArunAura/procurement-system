@@ -37,7 +37,7 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../frontend/login.html'));
 });
 
-app.get("*", (req, res) => {
+app.use((req, res) => {
   res.sendFile(path.join(__dirname, "../frontend/login.html"));
 });
 
@@ -51,4 +51,3 @@ app.listen(PORT, () => {
   console.log(`Access frontend at: http://localhost:${PORT}/login.html`);
   console.log(`==================================================`);
 });
-x
