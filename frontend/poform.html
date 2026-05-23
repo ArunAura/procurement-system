@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hospital Procurement System">
+
+    <title>Purchase Order</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="poform.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <h2>ProcureFlow</h2>
+            </div>
+
+            <nav>
+                <ul>
+
+                    <li>
+                        <a href="dashboard.html">
+                            <i class="fa-solid fa-house"></i>
+                            Dashboard
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="raiseindent.html">
+                            <i class="fa-solid fa-file-circle-plus"></i>
+                            Raise Indent
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="vendorreg.html">
+                            <i class="fa-solid fa-shop"></i>
+                            Vendor Registration
+                        </a>
+                    </li>
+
+                    <li class="active">
+                        <a href="poform.html">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Purchase Orders
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-check"></i>
+                            Approvals
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-chart-column"></i>
+                            Reports
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <!-- HEADER -->
+            <header class="top-header">
+
+                <div>
+                    <h1>Purchase Order</h1>
+                    <p>Create and generate purchase orders</p>
+                </div>
+
+                <div class="profile">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Procurement Team</span>
+                </div>
+
+            </header>
+
+            <!-- FORM CARD -->
+            <section class="form-card">
+
+                <form>
+
+                    <!-- HOSPITAL HEADER -->
+                    <div class="hospital-header">
+
+                        <h2>Smiles Institute of Gastroenterology LLP</h2>
+
+                        <p>
+                            No.423, 1st Main Road, 1st Stage,
+                            Mathikere, Bengaluru - 560054
+                        </p>
+
+                        <p>Karnataka, India</p>
+
+                        <p>
+                            Phone: XXXXXXXXXX |
+                            Email: XXXXXXX@gmail.com
+                        </p>
+
+                        <h1>Purchase Order</h1>
+
+                    </div>
+
+                    <!-- SHIPMENT DETAILS -->
+                    <div class="section-title">
+                        <h2>Shipment Address</h2>
+                    </div>
+
+                    <div class="form-grid">
+
+                        <div class="input-group">
+                            <label>State</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="input-group">
+                            <label>PO Number</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="input-group">
+                            <label>State Code</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="input-group">
+                            <label>PO Date</label>
+                            <input type="date">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Phone Number</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="input-group">
+                            <label>GSTIN No.</label>
+                            <input type="text">
+                        </div>
+
+                    </div>
+
+                    <!-- VENDOR DETAILS -->
+                    <div class="section-title">
+                        <h2>Vendor Address</h2>
+                    </div>
+
+                    <div class="form-grid">
+
+                        <div class="input-group">
+                            <label>State</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Vendor Name</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="input-group">
+                            <label>State Code</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="input-group">
+                            <label>GSTIN No.</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Phone Number</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Place of Supply</label>
+                            <input type="text">
+                        </div>
+
+                    </div>
+
+                    <!-- ITEM TABLE -->
+                    <div class="section-title">
+                        <h2>Item Details</h2>
+                    </div>
+
+                    <div class="table-container">
+
+                        <table>
+
+                            <thead>
+                                <tr>
+                                    <th>Sl No.</th>
+                                    <th>Item Description</th>
+                                    <th>HSN Code</th>
+                                    <th>QTY</th>
+                                    <th>Unit</th>
+                                    <th>Delivery Date</th>
+                                    <th>Unit Price</th>
+                                    <th>Charges</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="number"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="date"></td>
+                                    <td><input type="number"></td>
+                                    <td><input type="number"></td>
+                                    <td><input type="number"></td>
+                                </tr>
+
+                                <tr>
+                                    <td>2</td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="number"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="date"></td>
+                                    <td><input type="number"></td>
+                                    <td><input type="number"></td>
+                                    <td><input type="number"></td>
+                                </tr>
+
+                                <tr>
+                                    <td>3</td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="number"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="date"></td>
+                                    <td><input type="number"></td>
+                                    <td><input type="number"></td>
+                                    <td><input type="number"></td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                    <!-- TOTALS -->
+                    <div class="section-title">
+                        <h2>Billing Summary</h2>
+                    </div>
+
+                    <div class="billing-grid">
+
+                        <div class="input-group">
+                            <label>Subtotal</label>
+                            <input type="number">
+                        </div>
+
+                        <div class="input-group">
+                            <label>CGST</label>
+                            <input type="number">
+                        </div>
+
+                        <div class="input-group">
+                            <label>SGST</label>
+                            <input type="number">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Grand Total</label>
+                            <input type="number">
+                        </div>
+
+                    </div>
+
+                    <!-- PAYMENT DETAILS -->
+                    <div class="section-title">
+                        <h2>Payment Details</h2>
+                    </div>
+
+                    <div class="form-grid">
+
+                        <div class="input-group full-width">
+                            <label>Amount in Words</label>
+                            <textarea rows="2"></textarea>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Payment Terms</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Payment Method</label>
+                            <input type="text">
+                        </div>
+
+                    </div>
+
+                    <!-- TERMS -->
+                    <div class="section-title">
+                        <h2>Special Terms and Conditions</h2>
+                    </div>
+
+                    <div class="input-group full-width">
+                        <textarea rows="5"></textarea>
+                    </div>
+
+                    <!-- BUTTONS -->
+                    <div class="button-group">
+
+                        <button type="reset" class="reset-btn">
+                            Reset
+                        </button>
+
+                        <button type="button" class="download-btn">
+                            Download PDF
+                        </button>
+
+                        <button type="submit" class="save-btn">
+                            Create PO
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <!-- Integration JS -->
+    <script src="js/common.js"></script>
+    <script src="js/poform.js"></script>
+</body>
+</html>

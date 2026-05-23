@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hospital Procurement System">
+
+    <title>Raise Indent</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="raiseindent.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <h2>ProcureFlow</h2>
+            </div>
+
+            <nav>
+
+                <ul>
+
+                    <li>
+                        <a href="dashboard.html">
+                            <i class="fa-solid fa-house"></i>
+                            Dashboard
+                        </a>
+                    </li>
+
+                    <li class="active">
+                        <a href="raiseindent.html">
+                            <i class="fa-solid fa-file-circle-plus"></i>
+                            Raise Indent
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="vendorreg.html">
+                            <i class="fa-solid fa-shop"></i>
+                            Vendor Registration
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Purchase Orders
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-check"></i>
+                            Approvals
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-chart-column"></i>
+                            Reports
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <!-- HEADER -->
+            <header class="top-header">
+
+                <div>
+                    <h1>Raise Indent</h1>
+                    <p>Create a new procurement request</p>
+                </div>
+
+                <div class="profile">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Procurement Team</span>
+                </div>
+
+            </header>
+
+            <!-- INDENT FORM -->
+            <section class="form-card">
+
+                <form>
+
+                    <!-- BASIC DETAILS -->
+                    <div class="section-title">
+                        <h2>Indent Details</h2>
+                    </div>
+
+                    <div class="form-grid">
+
+                        <div class="input-group">
+                            <label>Indent Number</label>
+                            <input type="text" placeholder="IND-001">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Date</label>
+                            <input type="date">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Requested By</label>
+                            <input type="text" placeholder="Enter Name">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Department</label>
+                            <select>
+                                <option>Select Department</option>
+                                <option>Endoscopy</option>
+                                <option>Radiology</option>
+                                <option>Pharmacy</option>
+                                <option>Finance</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Required Date</label>
+                            <input type="date">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Designation</label>
+                            <input type="text" placeholder="Enter Designation">
+                        </div>
+
+                    </div>
+
+                    <!-- ITEM DETAILS -->
+                    <div class="section-title">
+                        <h2>Item Details</h2>
+                    </div>
+
+                    <div class="table-container">
+
+                        <table>
+
+                            <thead>
+                                <tr>
+                                    <th>Sl. No</th>
+                                    <th>Item Name & Description</th>
+                                    <th>Quantity</th>
+                                    <th>Remarks</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>1</td>
+
+                                    <td>
+                                        <input type="text" placeholder="Enter Item Description">
+                                    </td>
+
+                                    <td>
+                                        <input type="number" placeholder="Qty">
+                                    </td>
+
+                                    <td>
+                                        <input type="text" placeholder="Remarks">
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2</td>
+
+                                    <td>
+                                        <input type="text">
+                                    </td>
+
+                                    <td>
+                                        <input type="number">
+                                    </td>
+
+                                    <td>
+                                        <input type="text">
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>3</td>
+
+                                    <td>
+                                        <input type="text">
+                                    </td>
+
+                                    <td>
+                                        <input type="number">
+                                    </td>
+
+                                    <td>
+                                        <input type="text">
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>4</td>
+
+                                    <td>
+                                        <input type="text">
+                                    </td>
+
+                                    <td>
+                                        <input type="number">
+                                    </td>
+
+                                    <td>
+                                        <input type="text">
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>5</td>
+
+                                    <td>
+                                        <input type="text">
+                                    </td>
+
+                                    <td>
+                                        <input type="number">
+                                    </td>
+
+                                    <td>
+                                        <input type="text">
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                    <!-- REASON -->
+                    <div class="section-title">
+                        <h2>Reason For Requirement</h2>
+                    </div>
+
+                    <div class="input-group full-width">
+                        <textarea rows="5" placeholder="Explain the reason for requirement"></textarea>
+                    </div>
+
+                    <!-- APPROVAL SECTION -->
+                    <div class="section-title">
+                        <h2>Approval Details</h2>
+                    </div>
+
+                    <div class="approval-grid">
+
+                        <div class="approval-card">
+
+                            <h3>Prepared By</h3>
+
+                            <div class="input-group">
+                                <label>Name</label>
+                                <input type="text">
+                            </div>
+
+                            <div class="input-group">
+                                <label>Signature</label>
+                                <input type="text" placeholder="Digital Signature">
+                            </div>
+
+                            <div class="input-group">
+                                <label>Date</label>
+                                <input type="date">
+                            </div>
+
+                        </div>
+
+                        <div class="approval-card">
+
+                            <h3>Verified By</h3>
+
+                            <div class="input-group">
+                                <label>Name</label>
+                                <input type="text">
+                            </div>
+
+                            <div class="input-group">
+                                <label>Signature</label>
+                                <input type="text">
+                            </div>
+
+                            <div class="input-group">
+                                <label>Date</label>
+                                <input type="date">
+                            </div>
+
+                        </div>
+
+                        <div class="approval-card">
+
+                            <h3>Approved By</h3>
+
+                            <div class="input-group">
+                                <label>Name</label>
+                                <input type="text">
+                            </div>
+
+                            <div class="input-group">
+                                <label>Signature</label>
+                                <input type="text">
+                            </div>
+
+                            <div class="input-group">
+                                <label>Date</label>
+                                <input type="date">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- BUTTONS -->
+                    <div class="button-group">
+
+                        <button type="reset" class="reset-btn">
+                            Reset
+                        </button>
+
+                        <button type="button" class="download-btn">
+                            Download PDF
+                        </button>
+
+                        <button type="submit" class="save-btn">
+                            Submit Indent
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <!-- Integration JS -->
+    <script src="js/common.js"></script>
+    <script src="js/raiseindent.js"></script>
+</body>
+</html>

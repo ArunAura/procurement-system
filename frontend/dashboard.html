@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hospital Procurement System">
+
+    <title>Dashboard</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="dashboard.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="logo">
+
+                <div class="logo-icon">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+
+                <div>
+                    <h2>Smiles Institute</h2>
+                    <p>of Gastroenterology LLP</p>
+                </div>
+
+            </div>
+
+            <!-- NAVIGATION -->
+            <nav>
+
+                <ul>
+
+                    <li class="active">
+                        <a href="dashboard.html">
+                            <i class="fa-solid fa-house"></i>
+                            Dashboard
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="raiseindent.html">
+                            <i class="fa-solid fa-file-circle-plus"></i>
+                            Raise Indent
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="vendorreg.html">
+                            <i class="fa-solid fa-shop"></i>
+                            Vendor Registration
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="poform.html">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Purchase Orders
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-check"></i>
+                            Approvals
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-chart-column"></i>
+                            Reports
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <!-- TOP NAVBAR -->
+            <header class="top-navbar">
+
+                <div class="menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <div class="search-bar">
+
+                    <input type="text"
+                        placeholder="Search (PO No., Vendor, Indent ID...)">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                </div>
+
+                <div class="nav-right">
+
+                    <div class="notification">
+
+                        <i class="fa-regular fa-bell"></i>
+
+                        <span>5</span>
+
+                    </div>
+
+                    <div class="profile">
+
+                        <div class="profile-img">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+
+                        <div>
+                            <h4>Procurement Team</h4>
+                            <p>Procurement</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+            <!-- WELCOME SECTION -->
+            <section class="welcome-section">
+
+                <div>
+
+                    <h1>
+                        Welcome back, Procurement Team 👋
+                    </h1>
+
+                    <p>
+                        Here's what's happening with your procurement workflow today.
+                    </p>
+
+                </div>
+
+                <div class="date-card">
+
+                    <i class="fa-regular fa-calendar"></i>
+
+                    <div>
+                        <h3>20 May 2026, Tuesday</h3>
+                        <p>10:30 AM</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- STATS SECTION -->
+            <section class="stats-grid">
+
+                <div class="stat-card blue">
+
+                    <div class="icon-box">
+                        <i class="fa-solid fa-file"></i>
+                    </div>
+
+                    <div>
+                        <h2>12</h2>
+                        <p>Pending Indents</p>
+                        <a href="#">View all →</a>
+                    </div>
+
+                </div>
+
+                <div class="stat-card green">
+
+                    <div class="icon-box">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+
+                    <div>
+                        <h2>8</h2>
+                        <p>Approved Orders</p>
+                        <a href="#">View all →</a>
+                    </div>
+
+                </div>
+
+                <div class="stat-card orange">
+
+                    <div class="icon-box">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+
+                    <div>
+                        <h2>5</h2>
+                        <p>Pending Approvals</p>
+                        <a href="#">View all →</a>
+                    </div>
+
+                </div>
+
+                <div class="stat-card red">
+
+                    <div class="icon-box">
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </div>
+
+                    <div>
+                        <h2>3</h2>
+                        <p>Rejected Requests</p>
+                        <a href="#">View all →</a>
+                    </div>
+
+                </div>
+
+                <div class="stat-card purple">
+
+                    <div class="icon-box">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+
+                    <div>
+                        <h2>56</h2>
+                        <p>Total Vendors</p>
+                        <a href="#">View all →</a>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- QUICK ACTION + SEARCH -->
+            <section class="quick-search-section">
+
+                <!-- QUICK ACTIONS -->
+                <div class="quick-actions-card">
+
+                    <h2>Quick Actions</h2>
+
+                    <div class="quick-actions">
+
+                        <a href="raiseindent.html" class="action-card blue-action">
+
+                            <i class="fa-solid fa-file-circle-plus"></i>
+
+                            <div>
+                                <h3>Raise Indent</h3>
+                                <p>Create new indent</p>
+                            </div>
+
+                        </a>
+
+                        <a href="vendorreg.html" class="action-card green-action">
+
+                            <i class="fa-solid fa-shop"></i>
+
+                            <div>
+                                <h3>Add Vendor</h3>
+                                <p>Register vendor</p>
+                            </div>
+
+                        </a>
+
+                        <a href="poform.html" class="action-card purple-action">
+
+                            <i class="fa-solid fa-cart-shopping"></i>
+
+                            <div>
+                                <h3>Create PO</h3>
+                                <p>Create purchase order</p>
+                            </div>
+
+                        </a>
+
+                        <a href="#" class="action-card yellow-action">
+
+                            <i class="fa-solid fa-check"></i>
+
+                            <div>
+                                <h3>Approvals</h3>
+                                <p>Pending approvals</p>
+                            </div>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- SEARCH -->
+                <div class="search-card">
+
+                    <h2>Search</h2>
+
+                    <div class="search-row">
+
+                        <select>
+                            <option>All</option>
+                            <option>Indent</option>
+                            <option>Vendor</option>
+                            <option>PO</option>
+                        </select>
+
+                        <input type="text"
+                            placeholder="Enter keyword...">
+
+                        <button>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- ACTIVITY + APPROVAL -->
+            <section class="activity-section">
+
+                <!-- RECENT ACTIVITY -->
+                <div class="recent-activity">
+
+                    <div class="section-header">
+                        <h2>Recent Activity</h2>
+                        <a href="#">View All</a>
+                    </div>
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Type</th>
+                                <th>Description</th>
+                                <th>Status</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>IND-1012</td>
+                                <td>Indent</td>
+                                <td>Endoscopy Equipment</td>
+                                <td>
+                                    <span class="status pending">
+                                        Pending
+                                    </span>
+                                </td>
+                                <td>20 May 2026</td>
+                            </tr>
+
+                            <tr>
+                                <td>PO-2056</td>
+                                <td>PO</td>
+                                <td>Surgical Gloves</td>
+                                <td>
+                                    <span class="status approved">
+                                        Approved
+                                    </span>
+                                </td>
+                                <td>19 May 2026</td>
+                            </tr>
+
+                            <tr>
+                                <td>VEN-0042</td>
+                                <td>Vendor</td>
+                                <td>MediCare Solutions</td>
+                                <td>
+                                    <span class="status registered">
+                                        Registered
+                                    </span>
+                                </td>
+                                <td>18 May 2026</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <!-- PENDING APPROVALS -->
+                <div class="pending-approvals">
+
+                    <div class="section-header">
+                        <h2>Pending Approvals</h2>
+                        <a href="#">View All</a>
+                    </div>
+
+                    <div class="approval-item">
+
+                        <div class="approval-icon">
+                            <i class="fa-solid fa-file"></i>
+                        </div>
+
+                        <div class="approval-content">
+
+                            <h3>PO-2056</h3>
+
+                            <p>
+                                Vendor: MediCare Solutions
+                            </p>
+
+                            <p>
+                                Amount: ₹2,45,600
+                            </p>
+
+                            <div class="approval-buttons">
+
+                                <button class="approve">
+                                    Approve
+                                </button>
+
+                                <button class="reject">
+                                    Reject
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <!-- Integration JS -->
+    <script src="js/common.js"></script>
+</body>
+</html>

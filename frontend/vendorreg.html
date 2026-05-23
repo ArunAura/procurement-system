@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hospital Procurement System">
+
+    <title>Vendor Registration</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="vendorreg.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- MAIN CONTAINER -->
+    <div class="container">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <h2>ProcureFlow</h2>
+            </div>
+
+            <nav>
+
+                <ul>
+
+                    <li>
+                        <a href="dashboard.html">
+                            <i class="fa-solid fa-house"></i>
+                            Dashboard
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-file-circle-plus"></i>
+                            Raise Indent
+                        </a>
+                    </li>
+
+                    <li class="active">
+                        <a href="vendorreg.html">
+                            <i class="fa-solid fa-shop"></i>
+                            Vendor Registration
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Purchase Orders
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-check"></i>
+                            Approvals
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-chart-column"></i>
+                            Reports
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <!-- TOP HEADER -->
+            <header class="top-header">
+
+                <div>
+                    <h1>Vendor Registration</h1>
+                    <p>Add and manage vendor details</p>
+                </div>
+
+                <div class="profile">
+
+                    <i class="fa-solid fa-user"></i>
+                    <span>Procurement Team</span>
+
+                </div>
+
+            </header>
+
+            <!-- FORM CARD -->
+            <section class="form-card">
+
+                <form>
+
+                    <!-- COMPANY DETAILS -->
+                    <div class="section-title">
+                        <h2>Company Details</h2>
+                    </div>
+
+                    <div class="form-grid">
+
+                        <div class="input-group">
+                            <label>Company Name</label>
+                            <input type="text" placeholder="Enter company name">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Vendor Type</label>
+                            <select>
+                                <option>Select Type</option>
+                                <option>Medical Supplier</option>
+                                <option>Equipment Vendor</option>
+                                <option>Stationery Vendor</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group full-width">
+                            <label>Company Address</label>
+                            <textarea rows="3" placeholder="Enter address"></textarea>
+                        </div>
+
+                        <div class="input-group">
+                            <label>GST Number</label>
+                            <input type="text" placeholder="Enter GST Number">
+                        </div>
+
+                        <div class="input-group">
+                            <label>PAN Number</label>
+                            <input type="text" placeholder="Enter PAN Number">
+                        </div>
+
+                    </div>
+
+                    <!-- CONTACT DETAILS -->
+                    <div class="section-title">
+                        <h2>Contact Details</h2>
+                    </div>
+
+                    <div class="form-grid">
+
+                        <div class="input-group">
+                            <label>Contact Person</label>
+                            <input type="text" placeholder="Enter Name">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Phone Number</label>
+                            <input type="tel" placeholder="Enter Phone Number">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Email Address</label>
+                            <input type="email" placeholder="Enter Email">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Website</label>
+                            <input type="text" placeholder="Company Website">
+                        </div>
+
+                    </div>
+
+                    <!-- BANK DETAILS -->
+                    <div class="section-title">
+                        <h2>Bank Details</h2>
+                    </div>
+
+                    <div class="form-grid">
+
+                        <div class="input-group">
+                            <label>Bank Name</label>
+                            <input type="text" placeholder="Bank Name">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Account Number</label>
+                            <input type="text" placeholder="Account Number">
+                        </div>
+
+                        <div class="input-group">
+                            <label>IFSC Code</label>
+                            <input type="text" placeholder="IFSC Code">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Branch Name</label>
+                            <input type="text" placeholder="Branch Name">
+                        </div>
+
+                    </div>
+
+                    <!-- PROCUREMENT DETAILS -->
+                    <div class="section-title">
+                        <h2>Procurement Details</h2>
+                    </div>
+
+                    <div class="form-grid">
+
+                        <div class="input-group">
+                            <label>Products/Services</label>
+                            <input type="text" placeholder="Enter Product Category">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Delivery Timeline</label>
+                            <input type="text" placeholder="Delivery Timeline">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Payment Terms</label>
+                            <select>
+                                <option>Select</option>
+                                <option>Net 15</option>
+                                <option>Net 30</option>
+                                <option>Advance Payment</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <!-- DOCUMENTS -->
+                    <div class="section-title">
+                        <h2>Required Documents</h2>
+                    </div>
+
+                    <div class="document-grid">
+
+                        <label>
+                            <input type="checkbox">
+                            GST Certificate
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            PAN Card
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Cancelled Cheque
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Vendor Agreement
+                        </label>
+
+                    </div>
+
+                    <!-- BUTTONS -->
+                    <div class="button-group">
+
+                        <button type="reset" class="reset-btn">
+                            Reset
+                        </button>
+
+                        <button type="submit" class="save-btn">
+                            Save Vendor
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <!-- Integration JS -->
+    <script src="js/common.js"></script>
+    <script src="js/vendorreg.js"></script>
+</body>
+</html>
