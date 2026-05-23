@@ -37,6 +37,10 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../frontend/login.html'));
 });
 
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../frontend/login.html"));
+});
+
 // Error handling middleware (must be registered last)
 app.use(errorHandler);
 
@@ -47,3 +51,4 @@ app.listen(PORT, () => {
   console.log(`Access frontend at: http://localhost:${PORT}/login.html`);
   console.log(`==================================================`);
 });
+x
