@@ -388,21 +388,7 @@ Planned features:
 
 ---
 
-# 📷 Screenshots
 
-(Add screenshots here)
-
-Example:
-
-```md
-![Login Page](images/login.png)
-
-![Dashboard](images/dashboard.png)
-
-![Vendor Registration](images/vendor.png)
-```
-
----
 
 # 🌐 Project Repository
 
